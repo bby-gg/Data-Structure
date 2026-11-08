@@ -14,7 +14,7 @@ public class MyHashSet<E> {
         return !existed;
     }
     public boolean contains(E e){
-        return map.get(e) != null;
+        return map.containKey(e);
     }
     public boolean remove(E e){
         return map.remove(e) != null;

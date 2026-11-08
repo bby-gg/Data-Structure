@@ -125,4 +125,21 @@ public class MyHashMap<K,V> {
         }
         return a.equals(b);
     }
+
+
+//    public boolean containKey(K key){
+//        return get(key) != null;
+//    }
+    public boolean containKey(K key){
+        int index = indexFor(hash(key),table.length);
+        Node<K,V>cur = table[index];
+        while(cur != null){
+            if(sameKey(key,cur.key)){
+                return true;
+            }
+            cur = cur.next;
+        }
+        return false;
+    }
+
 }
