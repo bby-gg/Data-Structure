@@ -3,7 +3,6 @@ package day15;
 import day01.MyArrayList;
 import day06.MyHashMap;
 
-import java.util.Timer;
 
 //字符树
 public class Trie {
